@@ -1,0 +1,45 @@
+# Backend
+
+## Overview
+This is the backend service for our application. It handles all the business logic, database interactions, and API endpoints.
+
+## Technologies Used
+- FastAPI
+- Docker
+
+## Getting Started
+
+### Prerequisites
+- Docker
+- Docker Compose
+
+### Installation
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/BeJoyFul99/nextLearning-backend.git
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd backend
+    ```
+3. 
+### Configuration
+1. Create a `.env` file in the root directory and add the necessary environment variables.
+
+### Running the Application
+1. Start the Docker containers:
+    ```sh
+    docker-compose up
+    ```
+2. The server will be running at `http://localhost:8000`.
+
+
+## Contributing
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature-branch`)
+3. Make your changes
+4. Commit your changes (`git commit -m 'Add some feature'`)
+5. Push to the branch (`git push origin feature-branch`)
+6. Open a pull request
+
+ 

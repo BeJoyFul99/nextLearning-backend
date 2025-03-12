@@ -35,11 +35,27 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - :/app
+      - .:/app
     env_file:
       - .env
     depends_on:
       - ollama
+      - db
+
+  db:
+    image: postgres:17.4
+    restart: always
+    ports:
+      - "5432:5432"
+    shm_size: 128mb
+    env_file:
+      - .env
+    environment:
+      POSTGRES_DB: nextLearning-db
+    volumes:
+      - db_data:/var/lib/postgresql/data
 
 volumes:
   ollama_model_data:
+  db_data:  
+ 
